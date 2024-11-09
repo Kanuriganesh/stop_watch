@@ -1,0 +1,26 @@
+h1{
+    color:blue;
+    font-family: 'Roboto';
+    font-style: italic;
+}
+.first-container{
+    background-color:wheat; 
+    width:300px; 
+    height: 40vh;
+    border-radius: 18px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.styling-element{
+    text-align: center;
+}
+body{
+    background-color: skyblue; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
