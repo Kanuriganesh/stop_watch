@@ -1,26 +1,23 @@
-h1{
-    color:blue;
-    font-family: 'Roboto';
-    font-style: italic;
-}
-.first-container{
-    background-color:wheat; 
-    width:300px; 
-    height: 40vh;
-    border-radius: 18px; 
+.app-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;  
-}
-.styling-element{
-    text-align: center;
-}
-body{
-    background-color: skyblue; 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-}
+    justify-content: center;
+  }
+  .input-search {
+    width: 200px;
+    border-width: 1;
+  }
+  
+  .list-container {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .title {
+    font-family: 'Roboto';
+    font-size: 32px;
+    color: #183b56;
+    margin-bottom: 30px;
+  }
+  
