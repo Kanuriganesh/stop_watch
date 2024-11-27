@@ -1,25 +1,30 @@
-import './index.css'
-const UserProfile = props => {
-  const {userDetails, deleteUser} = props
-  const {uniqueNo, imageUrl, name, role} = userDetails
-  const onDelete = () => {
-    deleteUser(uniqueNo)
+import {Component} from 'react';
+import './index.css';
+class UserProfile extends Component{
+  state={backgroundColor:'red'}
+  changeTheBackGround=(event)=>{
+    const  {changeUpdates}=this.props; 
+     this.setState({backgroundColor:event.target.value}) 
+     changeUpdates(event.target.value)
   }
-  return (
-    <li className="user-card-container">
-      <img src={imageUrl} className="profile-pic" alt="profile-pic" />
-      <div className="user-details-container">
-        <h1 className="user-name"> {name} </h1>
-        <p className="user-designation"> {role} </p>
-      </div>
-      <button className="delete-button" onClick={onDelete}>
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/cross-img.png"
-          alt="cross"
-          className="delete-img"
-        />
-      </button>
-    </li>
-  )
+  optionsList=()=>{
+    return  (
+        <select className='input-select-styling' onChange={this.changeTheBackGround}>
+             <option value='red'>Red</option>
+             <option value='pink'>Pink</option> 
+             <option value='yellow'>yellow</option>
+        </select>
+    )
 }
-export default UserProfile
+  render(){ 
+    const {backgroundColor} = this.state; 
+    const  {changeUpdates}=this.props; 
+    console.log(backgroundColor)
+    return(
+       <div>
+             {this.optionsList()}
+       </div>
+    )
+  }
+}
+export default   UserProfile;

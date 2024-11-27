@@ -1,23 +1,15 @@
-.app-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .input-search {
-    width: 200px;
-    border-width: 1;
-  }
+.first {
+  width: 100vw; /* Full width of the viewport */
+  height: 100%; /* Height of the content or viewport */
+  min-height: 100vh; /* At least the height of the viewport */
+  overflow-y:hidden; /* Enable vertical scrolling when content overflows */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Ensure padding and border are included in the dimensions */
+  background-color: lightgray; /* Optional: Background color for visibility */ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
   
-  .list-container {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .title {
-    font-family: 'Roboto';
-    font-size: 32px;
-    color: #183b56;
-    margin-bottom: 30px;
-  }
-  
+}
